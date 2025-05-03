@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <h1 id="shop-name" class="animate__animated animate__fadeIn">Nama Toko</h1>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="navigation">
+                    <ul id="category-menu">
+                        <!-- Kategori akan ditambahkan secara dinamis di sini -->
+                    </ul>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Cari produk...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </nav>
+            </div>
+            <div class="tagline-wrapper">
+                <p id="shop-tagline" class="animate__animated animate__fadeIn animate__delay-1s">Deskripsi singkat toko akan muncul di sini</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content container">
+            <div class="hero-text animate__animated animate__fadeInLeft">
+                <h2 id="hero-title">Belanja Produk Terbaik</h2>
+                <p id="hero-subtitle">Temukan koleksi produk berkualitas tinggi dengan harga terbaik</p>
+                <a href="#product-section" class="cta-button"><span>Lihat Produk</span></a>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img id="shop-image" src="/api/placeholder/400/320" alt="Foto Toko">
+            </div>
+        </div>
+        <div class="wave-separator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="featured-categories" class="featured-categories">
+            <div class="section-header">
+                <h2>Kategori Populer</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div id="categories-container" class="categories-grid">
+                <!-- Kategori akan ditambahkan secara dinamis di sini -->
+            </div>
+        </section>
+
+        <section id="product-section" class="product-section">
+            <div class="section-header">
+                <h2 id="category-title">Semua Produk</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div id="product-filter" class="product-filter">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <!-- Filter kategori akan ditambahkan secara dinamis di sini -->
+            </div>
+            
+            <div id="products-container" class="products-grid">
+                <!-- Produk akan ditambahkan secara dinamis di sini -->
+            </div>
+        </section>
+
+        <section id="about-section" class="about-section">
+            <div class="section-header">
+                <h2>Tentang Kami</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/400/320" alt="Tentang Kami" id="about-image">
+                </div>
+                <div class="about-text">
+                    <p id="shop-about">Deskripsi toko akan muncul di sini</p>
+                    <div id="shop-contact">
+                        <h3>Hubungi Kami</h3>
+                        <div id="contact-details">
+                            <!-- Kontak akan ditambahkan secara dinamis di sini -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Dapatkan Info & Promo Terbaru</h2>
+                    <p>Daftar untuk mendapatkan update tentang produk baru dan penawaran spesial</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Alamat Email Anda" id="newsletter-email">
+                    <button id="newsletter-submit">Berlangganan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h2 id="footer-shop-name">Nama Toko</h2>
+                    <p id="footer-tagline">Deskripsi singkat toko akan muncul di sini</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" id="instagram-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" id="facebook-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" id="whatsapp-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#product-section">Produk</a></li>
+                        <li><a href="#about-section">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Kontak</h3>
+                    <div id="footer-contact">
+                        <!-- Kontak akan ditambahkan secara dinamis di sini -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="shop-copyright">&copy; 2025 Nama Toko. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Templates -->
+    <template id="product-template">
+        <div class="product-card">
+            <div class="product-badge"></div>
+            <div class="product-image">
+                <img src="" alt="">
+                <div class="product-overlay">
+                    <a href="#" class="view-product"><i class="fas fa-eye"></i></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-category"></div>
+                <h3 class="product-name"></h3>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="product-price"></p>
+                <p class="product-description"></p>
+                <a href="#" class="product-link" target="_blank">Beli Sekarang</a>
+            </div>
+        </div>
+    </template>
+
+    <template id="category-template">
+        <div class="category-card">
+            <div class="category-icon">
+                <i class="fas"></i>
+            </div>
+            <h3 class="category-name"></h3>
+            <a href="#" class="category-link">Lihat Produk</a>
+        </div>
+    </template>
+
+    <!-- Modal Template -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-product-image">
+                    <img src="" alt="" id="modal-image">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modal-name"></h3>
+                    <p id="modal-price"></p>
+                    <div class="modal-product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(14 ulasan)</span>
+                    </div>
+                    <div class="modal-product-description">
+                        <p id="modal-description"></p>
+                    </div>
+                    <a href="#" class="modal-product-link" id="modal-link" target="_blank">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shop-data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+    "shopInfo": {
+      "name": "ModernShop",
+      "tagline": "Style & Kualitas Premium",
+      "description": "ModernShop adalah destinasi belanja online terbaik untuk produk berkualitas premium dengan desain modern dan elegan. Kami menawarkan pengalaman berbelanja yang menyenangkan dengan produk pilihan terbaik dan layanan pelanggan yang ramah dan responsif.",
+      "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg",
+      "hero": {
+        "title": "Temukan Gaya Hidup Modern Anda",
+        "subtitle": "Koleksi produk premium dengan desain modern untuk gaya hidup berkualitas"
+      },
+      "contact": {
+        "phone": "081234567890",
+        "email": "hello@modernshop.com",
+        "address": "Jl. Modern No. 123, Jakarta",
+        "whatsapp": "081234567890",
+        "instagram": "@modern.shop",
+        "facebook": "ModernShopID"
+      }
+    },
+    "categories": [
+      {
+        "id": "elektronik",
+        "name": "Elektronik"
+      },
+      {
+        "id": "fashion",
+        "name": "Fashion"
+      },
+      {
+        "id": "aksesoris",
+        "name": "Aksesoris"
+      },
+      {
+        "id": "kesehatan",
+        "name": "Kesehatan & Kecantikan"
+      },
+      {
+        "id": "rumah",
+        "name": "Rumah & Lifestyle"
+      }
+    ],
+    "products": [
+      {
+        "id": "e001",
+        "categoryId": "elektronik",
+        "name": "Smart Wireless Earbuds",
+        "price": "Rp 599.000",
+        "description": "Earbuds wireless premium dengan noise cancelling, bass yang kuat, dan baterai tahan hingga 30 jam. Desain ergonomis yang nyaman untuk penggunaan sepanjang hari.",
+        "image": "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg",
+        "link": "https://example.com/beli-earbuds",
+        "badge": "Terlaris"
+      },
+      {
+        "id": "e002",
+        "categoryId": "elektronik",
+        "name": "Smart Watch Pro",
+        "price": "Rp 1.299.000",
+        "description": "Jam tangan pintar dengan layar AMOLED, fitur kesehatan lengkap, tahan air 50m, dan baterai hingga 14 hari. Tampil stylish dengan berbagai pilihan strap.",
+        "image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg",
+        "link": "https://example.com/beli-smartwatch",
+        "badge": "Baru"
+      },
+      {
+        "id": "e003",
+        "categoryId": "elektronik",
+        "name": "Wireless Fast Charger Pad",
+        "price": "Rp 249.000",
+        "description": "Pengisi daya nirkabel dengan teknologi fast charging 15W, kompatibel dengan semua smartphone terbaru. Desain tipis dan elegan cocok untuk meja kerja modern.",
+        "image": "https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg",
+        "link": "https://example.com/beli-wireless-charger"
+      },
+      {
+        "id": "e004",
+        "categoryId": "elektronik",
+        "name": "Portable Bluetooth Speaker",
+        "price": "Rp 499.000",
+        "description": "Speaker bluetooth portabel dengan suara 360° yang jernih, tahan air IPX7, dan baterai 24 jam. Cocok untuk acara outdoor atau di rumah.",
+        "image": "https://images.pexels.com/photos/1706694/pexels-photo-1706694.jpeg",
+        "link": "https://example.com/beli-speaker"
+      },
+      {
+        "id": "f001",
+        "categoryId": "fashion",
+        "name": "Kemeja Premium Slim Fit",
+        "price": "Rp 329.000",
+        "description": "Kemeja pria slim fit dengan bahan premium yang nyaman dan breathable. Potongan modern yang cocok untuk acara formal maupun kasual.",
+        "image": "https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg",
+        "link": "https://example.com/beli-kemeja"
+      },
+      {
+        "id": "f002",
+        "categoryId": "fashion",
+        "name": "Celana Chino Stretch",
+        "price": "Rp 299.000",
+        "description": "Celana chino dengan teknologi stretch yang nyaman untuk aktivitas sepanjang hari. Desain versatile yang mudah dipadukan dengan berbagai outfit.",
+        "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg",
+        "link": "https://example.com/beli-chino"
+      },
+      {
+        "id": "f003",
+        "categoryId": "fashion",
+        "name": "Sneakers Minimalist",
+        "price": "Rp 499.000",
+        "description": "Sneakers dengan desain minimalis yang timeless, terbuat dari kulit premium dan sol yang nyaman. Cocok untuk daily wear dengan berbagai style.",
+        "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg",
+        "link": "https://example.com/beli-sneakers",
+        "badge": "Limited"
+      },
+      {
+        "id": "f004",
+        "categoryId": "fashion",
+        "name": "Jam Tangan Analog Classic",
+        "price": "Rp 799.000",
+        "description": "Jam tangan analog dengan desain klasik yang elegan, terbuat dari stainless steel premium dan tahan air 5 ATM. Statement piece yang sempurna.",
+        "image": "https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg",
+        "link": "https://example.com/beli-jam"
+      },
+      {
+        "id": "k001",
+        "categoryId": "kesehatan",
+        "name": "Vitamin C Serum",
+        "price": "Rp 189.000",
+        "description": "Serum wajah dengan kandungan Vitamin C 20% yang membantu mencerahkan kulit, mengurangi noda hitam dan menjaga elastisitas kulit.",
+        "image": "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+        "link": "https://example.com/beli-serum"
+      },
+      {
+        "id": "k002",
+        "categoryId": "kesehatan",
+        "name": "Organic Clay Mask",
+        "price": "Rp 129.000",
+        "description": "Masker wajah dengan bahan clay organik yang membantu detoksifikasi kulit, mengecilkan pori, dan menjaga kelembapan kulit secara alami.",
+        "image": "https://images.pexels.com/photos/3762876/pexels-photo-3762876.jpeg",
+        "link": "https://example.com/beli-masker"
+      },
+      {
+        "id": "k003",
+        "categoryId": "kesehatan",
+        "name": "Essential Oil Diffuser",
+        "price": "Rp 349.000",
+        "description": "Diffuser essential oil dengan desain modern, lampu ambient, dan fungsi timer. Menciptakan suasana relaksasi dan menyegarkan ruangan Anda.",
+        "image": "https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg",
+        "link": "https://example.com/beli-diffuser"
+      },
+      {
+        "id": "k004",
+        "categoryId": "kesehatan",
+        "name": "Yoga Mat Premium",
+        "price": "Rp 299.000",
+        "description": "Matras yoga premium anti slip, ramah lingkungan, dan nyaman untuk berbagai jenis latihan. Ketebalan ideal 6mm dengan tekstur yang perfect grip.",
+        "image": "https://images.pexels.com/photos/4325484/pexels-photo-4325484.jpeg",
+        "link": "https://example.com/beli-yogamat",
+        "badge": "Eco-Friendly"
+      },
+      {
+        "id": "r001",
+        "categoryId": "rumah",
+        "name": "Minimalist Desk Lamp",
+        "price": "Rp 249.000",
+        "description": "Lampu meja dengan desain minimalis, dilengkapi pengaturan kecerahan dan temperatur cahaya. Tampilan elegan yang cocok untuk workspace modern.",
+        "image": "https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg",
+        "link": "https://example.com/beli-lamp"
+      },
+      {
+        "id": "r002",
+        "categoryId": "rumah",
+        "name": "Ceramic Coffee Set",
+        "price": "Rp 379.000",
+        "description": "Set kopi keramik handmade yang terdiri dari 4 cangkir dan 1 teko. Desain modern dengan sentuhan rustic yang menambah nilai estetika meja Anda.",
+        "image": "https://images.pexels.com/photos/990824/pexels-photo-990824.jpeg",
+        "link": "https://example.com/beli-coffeeset"
+      },
+      {
+        "id": "r003",
+        "categoryId": "rumah",
+        "name": "Indoor Plant Pot",
+        "price": "Rp 159.000",
+        "description": "Pot tanaman indoor dengan desain geometris modern, terbuat dari keramik berkualitas. Tersedia dalam berbagai ukuran dan warna yang stylish.",
+        "image": "https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg",
+        "link": "https://example.com/beli-pot",
+        "badge": "Populer"
+      },
+      {
+        "id": "r004",
+        "categoryId": "rumah",
+        "name": "Abstract Wall Art",
+        "price": "Rp 429.000",
+        "description": "Lukisan abstrak modern dengan frame kayu premium. Sentuhan artistic yang sempurna untuk dinding rumah atau kantor Anda dengan ukuran 60x90cm.",
+        "image": "https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg",
+        "link": "https://example.com/beli-art"
+      }
+    ]
+  }

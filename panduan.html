@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Penggunaan Website Toko</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #2980b9;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            border: 1px solid #ddd;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background-color: #fcf8e3;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .tip {
+            background-color: #dff0d8;
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .warning {
+            background-color: #f2dede;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Panduan Penggunaan Website Toko</h1>
+    <p>Halo! Selamat datang di panduan penggunaan website toko online kamu. Panduan ini akan membantu kamu mengatur informasi toko dan produk dengan mudah melalui file JSON.</p>
+
+    <div class="highlight">
+        <p>Semua pengaturan toko dan produk dikelola melalui file <code>shop-data.json</code>, jadi kamu gak perlu coding apapun! Tinggal edit file JSON aja, dan website kamu langsung update otomatis. Gampang banget!</p>
+    </div>
+
+    <h2>Cara Mengedit File JSON</h2>
+    <p>File JSON bisa diedit pakai editor teks biasa seperti Notepad, Notepad++, Visual Studio Code, atau editor teks lainnya. Yang penting:
+    </p>
+    <ul>
+        <li>Format JSON harus valid (kurung kurawa, koma, titik dua harus benar)</li>
+        <li>Jangan lupa simpan file setelah melakukan perubahan</li>
+        <li>Refresh halaman web untuk melihat perubahan</li>
+    </ul>
+
+    <div class="tip">
+        <p><strong>Tips!</strong> Kamu bisa menggunakan validasi JSON online seperti <a href="https://jsonlint.com/" target="_blank">JSONLint</a> untuk memastikan format JSON kamu sudah benar sebelum disimpan.</p>
+    </div>
+
+    <h2>Struktur File JSON</h2>
+    <p>File <code>shop-data.json</code> terdiri dari 3 bagian utama:</p>
+    <ol>
+        <li><code>shopInfo</code>: Informasi tentang toko kamu</li>
+        <li><code>categories</code>: Daftar kategori produk</li>
+        <li><code>products</code>: Daftar produk beserta detailnya</li>
+    </ol>
+
+    <h3>1. Mengatur Informasi Toko</h3>
+    <p>Bagian <code>shopInfo</code> berisi informasi dasar tentang toko kamu:</p>
+
+    <pre><code>{
+  "shopInfo": {
+    "name": "Nama Toko Kamu",
+    "tagline": "Slogan toko yang menarik",
+    "description": "Deskripsi lengkap tentang toko kamu, bisa beberapa kalimat",
+    "image": "url-gambar-toko.jpg",
+    "contact": {
+      "phone": "08123456789",
+      "email": "email@tokokamu.com",
+      "address": "Alamat toko kamu",
+      "whatsapp": "08123456789", 
+      "instagram": "@tokokamu",
+      "facebook": "namafacebookkamu"
+    }
+  },
+  ...
+}</code></pre>
+
+    <div class="highlight">
+        <p>Kamu bisa mengubah semua data di atas sesuai dengan info toko kamu. Pastikan URL gambar benar dan bisa diakses.</p>
+    </div>
+
+    <div class="note">
+        <p><strong>Catatan:</strong> Field kontak bersifat opsional. Kalau kamu gak punya Instagram misalnya, bisa dihapus aja field-nya atau dikosongkan dengan tanda kutip (contoh: <code>"instagram": ""</code>).</p>
+    </div>
+
+    <h3>2. Menambah/Mengurangi Kategori Produk</h3>
+    <p>Bagian <code>categories</code> berisi daftar kategori produk yang dijual di toko kamu:</p>
+
+    <pre><code>{
+  ...
+  "categories": [
+    {
+      "id": "elektronik",
+      "name": "Elektronik"
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion"
+    },
+    {
+      "id": "kesehatan",
+      "name": "Kesehatan & Kecantikan"
+    }
+  ],
+  ...
+}</code></pre>
+
+    <p>Untuk menambah kategori baru, tambahkan objek baru di dalam array <code>categories</code>:</p>
+
+    <pre><code>{
+  "id": "makanan",
+  "name": "Makanan & Minuman"
+}</code></pre>
+
+    <p>Untuk menghapus kategori, cukup hapus objek kategori yang tidak diinginkan. <strong>Tapi ingat!</strong> Pastikan kamu juga menghapus atau mengubah produk yang terkait dengan kategori tersebut.</p>
+
+    <div class="warning">
+        <p><strong>Perhatian!</strong> Nilai <code>id</code> harus unik dan tidak boleh mengandung spasi atau karakter khusus. Sebaiknya gunakan huruf kecil dan gunakan tanda hubung (-) untuk mengganti spasi. Nilai ini akan digunakan sebagai referensi untuk produk.</p>
+    </div>
+
+    <h3>3. Menambah/Mengelola Produk</h3>
+    <p>Bagian <code>products</code> berisi daftar semua produk yang dijual di toko kamu:</p>
+
+    <pre><code>{
+  ...
+  "products": [
+    {
+      "id": "e001",
+      "categoryId": "elektronik",
+      "name": "Headphone Bluetooth",
+      "price": "Rp 299.000",
+      "description": "Deskripsi produk di sini",
+      "image": "url-gambar-produk.jpg",
+      "link": "https://tokopedia.com/tokokamu/headphone"
+    },
+    ...
+  ]
+}</code></pre>
+
+    <p>Setiap produk memiliki beberapa field:</p>
+    <ul>
+        <li><code>id</code>: ID unik untuk produk</li>
+        <li><code>categoryId</code>: ID kategori tempat produk ini berada (harus sesuai dengan ID di bagian categories)</li>
+        <li><code>name</code>: Nama produk</li>
+        <li><code>price</code>: Harga produk (bisa dalam format apapun)</li>
+        <li><code>description</code>: Deskripsi produk</li>
+        <li><code>image</code>: URL gambar produk</li>
+        <li><code>link</code>: Link untuk membeli produk (opsional, bisa dikosongkan)</li>
+    </ul>
+
+    <h2>Contoh Penggunaan</h2>
+
+    <h3>1. Cara Menambah Kategori Baru</h3>
+    <p>Misal, kamu ingin menambahkan kategori "Aksesoris":</p>
+
+    <pre><code>"categories": [
+  {
+    "id": "elektronik",
+    "name": "Elektronik"
+  },
+  {
+    "id": "fashion",
+    "name": "Fashion"
+  },
+  {
+    "id": "kesehatan",
+    "name": "Kesehatan & Kecantikan"
+  },
+  {
+    "id": "aksesoris",
+    "name": "Aksesoris"
+  }
+]</code></pre>
+
+    <h3>2. Cara Menambah Produk dalam Kategori</h3>
+    <p>Sekarang kamu ingin menambahkan produk baru di kategori "Aksesoris":</p>
+
+    <pre><code>"products": [
+  ...produk lainnya...,
+  {
+    "id": "a001",
+    "categoryId": "aksesoris",
+    "name": "Gelang Etnik",
+    "price": "Rp 89.000",
+    "description": "Gelang etnik handmade dari pengrajin lokal",
+    "image": "gelang.jpg",
+    "link": "https://tokopedia.com/tokokamu/gelang-etnik"
+  }
+]</code></pre>
+
+    <h3>3. Cara Mengubah Informasi Toko</h3>
+    <p>Kamu ingin mengubah nama dan deskripsi toko:</p>
+
+    <pre><code>"shopInfo": {
+  "name": "Nama Toko Baru",
+  "tagline": "Slogan baru yang lebih keren",
+  "description": "Deskripsi baru yang lebih menarik dan informatif",
+  ...
+}</code></pre>
+
+    <h2>Troubleshooting</h2>
+    <p>Beberapa masalah yang mungkin terjadi dan solusinya:</p>
+
+    <h3>Website tidak menampilkan perubahan</h3>
+    <ul>
+        <li>Pastikan file JSON sudah disimpan dengan benar</li>
+        <li>Refresh halaman dengan menekan Ctrl+F5 (atau Cmd+Shift+R di Mac)</li>
+        <li>Cek console browser (F12 > Console) untuk melihat error yang mungkin terjadi</li>
+    </ul>
+
+    <h3>Error "Gagal memuat data toko"</h3>
+    <ul>
+        <li>Format JSON kamu mungkin tidak valid. Cek kembali kurung kurawa, koma, dan titik dua</li>
+        <li>Pastikan semua field yang wajib ada sudah diisi</li>
+        <li>Validasi file JSON kamu di <a href="https://jsonlint.com/" target="_blank">JSONLint</a></li>
+    </ul>
+
+    <h3>Gambar tidak muncul</h3>
+    <ul>
+        <li>Pastikan URL gambar benar dan bisa diakses</li>
+        <li>Jika menggunakan file lokal, pastikan path-nya benar dan relatif terhadap lokasi website</li>
+    </ul>
+
+    <div class="tip">
+        <p><strong>Tips untuk pemula:</strong> Sebaiknya buat backup file <code>shop-data.json</code> sebelum melakukan perubahan besar. Bisa juga pakai fitur "copy-paste" untuk menyalin format yang sudah ada dan mengubah isinya saja.</p>
+    </div>
+
+    <h2>Contoh File JSON Lengkap</h2>
+    <p>Berikut contoh file JSON lengkap yang bisa kamu gunakan sebagai referensi:</p>
+
+    <pre><code>{
+  "shopInfo": {
+    "name": "Toko Keren",
+    "tagline": "Produk keren harga bersahabat",
+    "description": "Toko Keren adalah tempatnya belanja barang-barang keren dengan harga terjangkau.",
+    "image": "toko.jpg",
+    "contact": {
+      "phone": "081234567890",
+      "email": "hello@tokokeren.com",
+      "address": "Jl. Keren No. 123, Jakarta",
+      "whatsapp": "081234567890",
+      "instagram": "@toko.keren"
+    }
+  },
+  "categories": [
+    {
+      "id": "elektronik",
+      "name": "Elektronik"
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion"
+    }
+  ],
+  "products": [
+    {
+      "id": "e001",
+      "categoryId": "elektronik",
+      "name": "Headphone Bluetooth",
+      "price": "Rp 299.000",
+      "description": "Headphone bluetooth berkualitas tinggi dengan bass yang kuat.",
+      "image": "headphone.jpg",
+      "link": "https://example.com/beli-headphone"
+    },
+    {
+      "id": "f001",
+      "categoryId": "fashion",
+      "name": "Kemeja Casual",
+      "price": "Rp 189.000",
+      "description": "Kemeja casual pria dengan bahan nyaman dan desain yang stylish.",
+      "image": "kemeja.jpg",
+      "link": "https://example.com/beli-kemeja"
+    }
+  ]
+}</code></pre>
+
+    <p>Selamat mencoba! Website toko kamu sekarang bisa dikelola dengan mudah hanya dengan mengedit file JSON. Kalau masih bingung atau ada pertanyaan, silakan hubungi developer website kamu.</p>
+
+    <a href="index.html" class="btn">Kembali ke Website Toko</a>
+
+</body>
+</html>
